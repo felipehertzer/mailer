@@ -75,7 +75,7 @@ class Mailer(object):
     """
 
     def __init__(self, host="localhost", port=0, use_tls=False, usr=None, pwd=None, use_ssl=False, use_plain_auth=False,
-                 timeout=socket.TIPC_CONN_TIMEOUT):
+                 timeout=socket._GLOBAL_DEFAULT_TIMEOUT):
         self.host           = host
         self.port           = port
         self.use_tls        = use_tls
